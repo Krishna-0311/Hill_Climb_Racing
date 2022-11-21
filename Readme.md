@@ -17,29 +17,3 @@ const colorizeTextStyle = TextStyle(
   fontFamily: 'Horizon',
 );
 
-return SizedBox(
-  width: 250.0,
-  child: AnimatedTextKit(
-    animatedTexts: [
-      ColorizeAnimatedText(
-        'Larry Page',
-        textStyle: colorizeTextStyle,
-        colors: colorizeColors,
-      ),
-      ColorizeAnimatedText(
-        'Bill Gates',
-        textStyle: colorizeTextStyle,
-        colors: colorizeColors,
-      ),
-      ColorizeAnimatedText(
-        'Steve Jobs',
-        textStyle: colorizeTextStyle,
-        colors: colorizeColors,
-      ),
-    ],
-    isRepeatingAnimation: true,
-    onTap: () {
-      print("Tap Event");
-    },
-  ),
-);
